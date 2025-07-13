@@ -1,0 +1,97 @@
+/* Basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Top Image Styling */
+.top-image-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.top-image {
+  width: 100%;
+  max-width: 600px;
+  border: 3px solid #ccc;
+  border-radius: 12px;
+}
+
+/* Dog Photo Row*/
+.photo-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+
+
+.photo-item {
+  max-width: 220px;
+  text-align: center;
+}
+
+.photo-item img {
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+img[src$=".GIF"] {
+  width: 200px;
+  height: 200px;
+}
+
+
+/* Inline image and text */
+.inline-img-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inline-img-text img {
+  margin-right: 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Custom Bullet List Using Cookie */
+ul.custom-bullets {
+  list-style: none;
+  padding-left: 30px;
+  max-width: 400px;
+  margin-left: 0;
+}
+
+ul.custom-bullets li {
+  position: relative;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #333;
+  padding-left: 25px;
+}
+
+ul.custom-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background-image: url('cookie.png'); /* My local cookie image */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Iconfinder-based bullets (heart icon) */
+ul.icon-bullets {
+  list-style-image: url("https://cdn0.iconfinder.com/data/icons/typicons-2/24/star-64.png");
+  padding-left: 30px;
+  max-width: 400px;
+  margin-left: 23px;
+}
+
